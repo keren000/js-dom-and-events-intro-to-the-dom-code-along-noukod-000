@@ -30,7 +30,6 @@ Spec.describe 'In this lab,' do
         table = parsed_html.search('table')[0]
         expect(table).to_not be_nil, "No <table> tag was found"
       end
-
      end
 
      context 'the <table> tag' do
@@ -44,9 +43,6 @@ Spec.describe 'In this lab,' do
         table = parsed_html.search('table')[0]
         expect(table.children.any? {|child| child.name == "thead"}).to be true
       end
-
      end
-
    end
-
  end
