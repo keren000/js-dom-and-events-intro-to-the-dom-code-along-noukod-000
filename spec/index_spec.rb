@@ -12,12 +12,12 @@ RSpec.describe 'In this lab,' do
      context 'the <body> tag' do
 
        it 'contains an <h1> tag' do
-        h1 = parsed_html.search('h1')[0]
+        h1 = parsed_index.search('h1')[0]
         expect(h1).to_not be_nil, "No <h1> tag was found"
       end
 
        it 'contains an <p> tag' do
-        p = parsed_html.search('p')[0]
+        p = parsed_index.search('p')[0]
         expect(p).to_not be_nil, "No <p> tag was found"
       end
 
